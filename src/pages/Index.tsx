@@ -43,12 +43,12 @@ const Index = () => {
             </div>
           </section>
           
-          {/* <section className="relative py-20">
+          <section className="relative py-20">
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30 dark:from-gray-800/30 dark:to-slate-800/30"></div>
             <div className="relative z-10">
               <Projects />
             </div>
-          </section> */}
+          </section>
           
           {/* <section className="relative py-20 bg-gradient-to-r from-slate-50/80 to-blue-50/80 dark:from-gray-900/80 dark:to-slate-800/80 backdrop-blur-sm">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-indigo-50/30 to-transparent dark:via-gray-700/30"></div>
