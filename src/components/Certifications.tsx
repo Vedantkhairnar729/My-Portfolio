@@ -96,7 +96,7 @@ const Certifications = () => {
   const stats = [
     { label: 'Active Certifications', value: '20', icon: CheckCircle, color: 'text-blue-600 dark:text-blue-400' },
     { label: 'Cloud Platforms', value: '3', icon: Star, color: 'text-green-600 dark:text-green-400' },
-    { label: 'Pass Rate', value: '75%', icon: TrendingUp, color: 'text-purple-600 dark:text-purple-400' },
+    { label: 'Pass Rate', value: '85%', icon: TrendingUp, color: 'text-purple-600 dark:text-purple-400' },
     { label: 'Latest Achievement', value: '2025', icon: Award, color: 'text-orange-600 dark:text-orange-400' }
   ];
 

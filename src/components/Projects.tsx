@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Github, ExternalLink, Filter } from 'lucide-react';
 
@@ -8,64 +7,64 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.',
+      title: 'Blockchain Voting System',
+      description: 'Decentralized blockchain voting system with smart contract-based vote recording, secure authentication, and real-time result tracking.',
       image: '/placeholder.svg',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      demoLink: 'https://demo.example.com',
-      githubLink: 'https://github.com/yourusername/ecommerce',
-      category: 'Full-Stack'
+      technologies: ['Solidity', 'javascript'],
+      // demoLink: 'https://demo.example.com',
+      githubLink: 'https://github.com/Vedantkhairnar729/blockchain-voting',
+      category: 'web3'
     },
     {
       id: 2,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with real-time data visualization.',
+      title: 'Generalcom',
+      description: 'Responsive website template featuring modular frontend components, organized backend structure, and scalable architecture.',
       image: '/placeholder.svg',
-      technologies: ['React', 'TypeScript', 'Chart.js', 'Express.js'],
-      demoLink: 'https://demo.example.com',
-      githubLink: 'https://github.com/yourusername/dashboard',
-      category: 'Frontend'
-    },
-    {
-      id: 3,
-      title: 'Task Management API',
-      description: 'RESTful API for task management with authentication, file uploads, and email notifications.',
-      image: '/placeholder.svg',
-      technologies: ['Node.js', 'Express.js', 'PostgreSQL', 'JWT'],
-      demoLink: 'https://api.example.com/docs',
-      githubLink: 'https://github.com/yourusername/task-api',
-      category: 'Backend'
-    },
-    {
-      id: 4,
-      title: 'Weather App',
-      description: 'Mobile-responsive weather application with location-based forecasts and interactive maps.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'OpenWeather API', 'Mapbox', 'CSS3'],
-      demoLink: 'https://weather.example.com',
-      githubLink: 'https://github.com/yourusername/weather-app',
-      category: 'Frontend'
-    },
-    {
-      id: 5,
-      title: 'Chat Application',
-      description: 'Real-time chat application with rooms, file sharing, and user presence indicators.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-      demoLink: 'https://chat.example.com',
-      githubLink: 'https://github.com/yourusername/chat-app',
+      technologies: ['JavaScript','PHP', 'Less', 'Hack'],
+      // demoLink: 'https://demo.example.com',
+      githubLink: 'https://github.com/Vedantkhairnar729/generalcom',
       category: 'Full-Stack'
     },
     {
-      id: 6,
-      title: 'Data Visualization Tool',
-      description: 'Interactive data visualization platform for analyzing complex datasets with custom charts.',
+      id: 3,
+      title: 'Book Marketing',
+      description: 'Book marketing module for an online book-selling platform, designed to enhance visibility and promote book listings effectively.',
       image: '/placeholder.svg',
-      technologies: ['Python', 'Django', 'D3.js', 'PostgreSQL'],
-      demoLink: 'https://dataviz.example.com',
-      githubLink: 'https://github.com/yourusername/dataviz',
-      category: 'Data Science'
-    }
+      technologies: ['JavaScript', 'PHP','CSS'],
+      // demoLink: 'https://api.example.com/docs',
+      githubLink: 'https://github.com/Vedantkhairnar729/Book-Selling-site/tree/main/Book%20Marketing',
+      category: 'Full-Stack'
+    },
+    // {
+    //   id: 4,
+    //   title: 'Weather App',
+    //   description: 'Mobile-responsive weather application with location-based forecasts and interactive maps.',
+    //   image: '/placeholder.svg',
+    //   technologies: ['React', 'OpenWeather API', 'Mapbox', 'CSS3'],
+    //   // demoLink: 'https://weather.example.com',
+    //   githubLink: 'https://github.com/yourusername/weather-app',
+    //   category: 'Frontend'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Chat Application',
+    //   description: 'Real-time chat application with rooms, file sharing, and user presence indicators.',
+    //   image: '/placeholder.svg',
+    //   technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
+    //   // demoLink: 'https://chat.example.com',
+    //   githubLink: 'https://github.com/yourusername/chat-app',
+    //   category: 'Full-Stack'
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Data Visualization Tool',
+    //   description: 'Interactive data visualization platform for analyzing complex datasets with custom charts.',
+    //   image: '/placeholder.svg',
+    //   technologies: ['Python', 'Django', 'D3.js', 'PostgreSQL'],
+    //   // demoLink: 'https://dataviz.example.com',
+    //   githubLink: 'https://github.com/yourusername/dataviz',
+    //   category: 'Data Science'
+    // }
   ];
 
   const categories = ['All', 'Full-Stack', 'Frontend', 'Backend', 'Data Science'];
@@ -75,10 +74,10 @@ const Projects = () => {
     : projects.filter(project => project.category === selectedFilter);
 
   return (
-    <section id="projects" className="py-20 px-6 bg-gray-50 dark:bg-gray-800/50">
+    <section id="projects" className="py-20 px-6 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800/50 dark:to-gray-900/50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
@@ -93,10 +92,10 @@ const Projects = () => {
             <button
               key={category}
               onClick={() => setSelectedFilter(category)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
                 selectedFilter === category
-                  ? 'bg-blue-600 text-white shadow-lg transform scale-105'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 hover:shadow-md'
+                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                  : 'bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
               }`}
             >
               <Filter className="inline-block w-4 h-4 mr-2" />
@@ -110,57 +109,45 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group relative bg-white dark:bg-gray-800/90 rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300"
             >
-              <div className="relative overflow-hidden">
+              <div className="aspect-video overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white rounded-full text-xs font-medium"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-white hover:text-blue-400 transition-colors"
+                    >
+                      <Github className="w-5 h-5 mr-2" />
+                      View Source Code
+                    </a>
+                  </div>
+                </div>
               </div>
-
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
+                <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-2">
                   {project.description}
                 </p>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex space-x-4">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Demo
-                  </a>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center px-4 py-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-300"
-                  >
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </a>
-                </div>
               </div>
             </div>
           ))}
