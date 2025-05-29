@@ -35,16 +35,16 @@ const Projects = () => {
       githubLink: 'https://github.com/Vedantkhairnar729/Book-Selling-site/tree/main/Book%20Marketing',
       category: 'Full-Stack'
     },
-    // {
-    //   id: 4,
-    //   title: 'Weather App',
-    //   description: 'Mobile-responsive weather application with location-based forecasts and interactive maps.',
-    //   image: '/placeholder.svg',
-    //   technologies: ['React', 'OpenWeather API', 'Mapbox', 'CSS3'],
-    //   // demoLink: 'https://weather.example.com',
-    //   githubLink: 'https://github.com/yourusername/weather-app',
-    //   category: 'Frontend'
-    // },
+    {
+      id: 4,
+      title: 'Weather App',
+      description: 'Mobile-responsive weather application with location-based forecasts and interactive maps.',
+      image: '/placeholder.svg',
+      technologies: ['React', 'OpenWeather API', 'Mapbox', 'CSS3'],
+      // demoLink: 'https://weather.example.com',
+      githubLink: 'https://github.com/yourusername/weather-app',
+      category: 'Frontend'
+    },
     // {
     //   id: 5,
     //   title: 'Chat Application',
